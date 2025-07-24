@@ -43,14 +43,14 @@ Igualdade: Obtém os dados que forem IGUAIS aos especificados:
   -> country é igual a México.
 */
 SELECT * FROM customers
-WHERE * = 'Mexico';
+WHERE country = 'Mexico';
 
 /*
 Maior que: Obtém os dados que forem MAIORES QUE os especificados:
   -> unit_price é maior que 100.
 */
 SELECT * FROM products
-WHERE  unit_price > 100;
+WHERE unit_price > 100;
 
 
 /*
