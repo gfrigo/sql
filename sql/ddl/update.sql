@@ -1,5 +1,5 @@
 /*
-Definição: Atualiza uma linhda de dados em colunas específicas mediante filtro
+Definição: Atualiza uma linha de dados em colunas específicas mediante filtro
 com WHERE.
 
 IMPORTANTE: A execução do update sem WHERER, atribuirá o valor em TODAS as linhas.
