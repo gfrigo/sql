@@ -1,5 +1,5 @@
 /*
-Definição: Adiciona ou Remove colunas à tabelas existentes
+Definição: Altera colunas e tabelas existentes
 */
 
 -- Remover restrições (CONSTRAINTS)
