@@ -16,23 +16,6 @@ execução, não para acessar diretamente as tabelas e modificar dados sensívei
 4- Oculta complexidade de procedimentos e oferece interface simplificada para usuários.
 */
 
--- Criando tabela "transactions":
-CREATE TABLE IF NOT EXISTS transactions (
-    id SERIAL PRIMARY KEY NOT NULL,
-    tipo CHAR(1) NOT NULL,
-    descricao VARCHAR(10) NOT NULL,
-    valor INTEGER NOT NULL,
-    cliente_id INTEGER NOT NULL,
-    realizada_em TIMESTAMP NOT NULL DEFAULT NOW()
-);
-
--- Criando tabela "clients":
-CREATE TABLE IF NOT EXISTS clients (
-    id SERIAL PRIMARY KEY NOT NULL,
-    limite INTEGER NOT NULL,
-    saldo INTEGER NOT NULL
-);
-
 -- Criando procedure "transfer" para garantir integridade dos dados antes da inserção:
 CREATE OR REPLACE PROCEDURE transfer(
     IN p_tipo CHAR(1),
