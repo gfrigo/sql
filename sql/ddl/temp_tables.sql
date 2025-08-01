@@ -1,7 +1,8 @@
 /*
 Definição: Temporary tables são tabelas temporárias usadas para armazenar dados
 durante a sessão, facilitando processos intermediários sem impactar o banco
-permanentemente.
+permanentemente. Permite uma "simulação" (fase de testes) de situações críticas
+que seriam feitas no banco de dados real.
 */
 
 /*
